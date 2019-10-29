@@ -1,0 +1,27 @@
+---
+title: "plotly"
+author: "Saptarshi"
+date: "10/27/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+ 
+## create scatter plot
+```{r, echo=FALSE}
+library(plotly)
+data("mtcars")
+as.data.frame(mtcars)
+
+ 
+ 
+plot_ly(mtcars,x=wt,y=mpg,mode="markers")
+
+```
+
+ 
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
